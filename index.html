@@ -273,15 +273,104 @@
     <!-- footer -->
     <footer class="footer">
       <div class="footer-main">
-        <div>
-            
+        <div class="footer-container py-4">
+           <div class="footer-content">
+              <div class="order-3 col-lg-4 order-lg-1 mt-lg-0 mt-5">
+                <h4 class="footer-logo">
+                    <a class="logo" href="#">
+                        Farmstead
+                        <i class="fas fa-leaf" aria-hidden="true"></i>
+                    </a>
+                </h4>
+                <p class="footer-p1 mt-4">
+                    Duis imperdiet sapien tortor, vitae congue diam auctor vitae. Aliquam eget turpis ornare, euismod ligul aeget, enenatis dui.
+                </p>
+                <p class="footer-copy mt-5">
+                   © 2022 Farmstead. All Rights Reserved | WordPress Theme by 
+                   <a href="#"> W3Layouts.</a>
+                </p>
+
+
+              </div>
+              <div class="footer-contact col-lg-4 pl-lg-5">
+                <h3>Find Us</h3>
+                <div class="column-2">
+                    <p>Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.</p>
+                    <p class="mt-3">
+                        Phone:
+                        <a href="tel:+12 23456790">+12 23456790</a>
+                    </p>
+                    <p class="mt-3">
+                        Email:
+                        <a href="mailto:info@example.com">info@example.com</a>
+                    </p>
+                    <p class="mt-3">
+                        Fax:
+                        <a href="tel:+11 367 21890">+ 11 367 21890</a>
+                    </p>
+                </div>
+              </div>
+              <div class="order-1 col-lg-4 col-md-7 order-lg-3 mt-lg-0 mt-5 column ">
+                 <h3>Newsletter</h3>
+                 <div class="footer-subscribe">
+                   <p>Subscribe to our mailing list and get updates to your email inbox.</p>
+                   <form action="" class="subscribe mt-3" method="post" >
+                       <input type="email"  name="Email" placeholder="Email Address" required>
+                       <button>
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                       </button>
+                   </form>
+                 </div>
+                 <div class="footer-social mt-4 pt-2">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </li>
+                    </ul>
+                 </div>
+              </div>
+           </div> 
         </div>
       </div>
       <div class="footer-button">
-
+        <button oncelick="topFunction()" id="movetop" title="Go to top" style="display:block;">
+            <i class="fas fa-level-up-alt" aria-hidden="true"></i>
+        </button>
       </div>
     </footer>
     <!-- bootstrap script -->
+    <script>
+         // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
